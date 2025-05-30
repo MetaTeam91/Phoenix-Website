@@ -101,6 +101,17 @@ body {
   to { opacity: 1; }
 }
 
+@keyframes fadeOut {
+  from { opacity: 1; }
+  to { opacity: 0; }
+}
+
+/* Add this to the .content h1 after slideDown */
+
+.content h1.fadeOut {
+  animation: fadeOut 1s forwards;
+}
+
 .fade-in {
   opacity: 0;
   animation: fadeIn 1s forwards;
